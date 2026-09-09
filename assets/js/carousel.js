@@ -1,0 +1,88 @@
+// Home 2 
+
+$(document).ready(function () {
+    var owl = $('.portfolio-con .owl-carousel');
+    owl.owlCarousel({
+        margin: 30,
+        nav: false,
+        loop: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 3
+            }
+        }
+    })
+})
+
+$(document).ready(function () {
+    var owl = $('.hometestimonial-con .owl-carousel');
+    owl.owlCarousel({
+        margin: 30,
+        nav: false,
+        loop: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 2
+            }
+        }
+    })
+})
+
+// Google Reviews Testimonial Carousel
+$(document).ready(function () {
+    var reviewsOwl = $('.google-reviews-carousel');
+    if (reviewsOwl.length) {
+        reviewsOwl.owlCarousel({
+            margin: 24,
+            nav: false,
+            loop: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                576: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
+            }
+        });
+
+        $('.testimonial-nav-prev').click(function () {
+            reviewsOwl.trigger('prev.owl.carousel');
+        });
+
+        $('.testimonial-nav-next').click(function () {
+            reviewsOwl.trigger('next.owl.carousel');
+        });
+    }
+});
