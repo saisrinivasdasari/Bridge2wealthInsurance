@@ -39,16 +39,29 @@
 <body>
 <!-- Back to top button -->
 <a id="button"></a>
-<div class="top-bar py-2 text-white" style="background-color: #0c3b5e; font-size: 14px;">
-    <div class="container d-flex justify-content-between align-items-center flex-wrap">
-        <div>
-            <i class="fa-solid fa-phone mr-1"></i> <a href="tel:+917337333436" class="text-white mr-3 text-decoration-none">+91 7337333436</a>
-            <i class="fa-solid fa-phone-flip mr-1"></i> <a href="tel:+919849798881" class="text-white mr-3 text-decoration-none">+91 9849798881 (Since 2005)</a>
-            <i class="fa-solid fa-location-dot mr-1"></i> <span class="text-white">Hyderabad, Telangana</span>
+<div class="top-bar py-2 text-white">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="top-bar-left d-flex align-items-center flex-wrap">
+            <a href="tel:+917337333436" class="top-bar-item text-white text-decoration-none">
+                <i class="fa-solid fa-phone"></i><span>+91 7337333436</span>
+            </a>
+            <a href="tel:+919849798881" class="top-bar-item text-white text-decoration-none">
+                <i class="fa-solid fa-phone-flip"></i><span>+91 9849798881 <small class="text-white-50">(Since 2005)</small></span>
+            </a>
+            <a href="mailto:info@bridge2wealth.in" class="top-bar-item text-white text-decoration-none">
+                <i class="fa-solid fa-envelope"></i><span>info@bridge2wealth.in</span>
+            </a>
+            <span class="top-bar-item text-white">
+                <i class="fa-solid fa-location-dot"></i><span>Hyderabad, Telangana</span>
+            </span>
         </div>
-        <div>
-            <a href="https://www.facebook.com/Bridgee2Wealth" target="_blank" class="text-white mr-3"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/bridge_2_wealth" target="_blank" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+        <div class="top-bar-right d-flex align-items-center">
+            <a href="https://www.facebook.com/Bridgee2Wealth" target="_blank" rel="noopener noreferrer" class="top-bar-social text-white" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/bridge_2_wealth" target="_blank" rel="noopener noreferrer" class="top-bar-social text-white" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
         </div>
     </div>
 </div>
@@ -120,20 +133,20 @@
             </div>
         </div>
         <div class="row" data-aos="fade-up">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-4">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-4">
                 <div class="contact-box p-4 bg-white shadow-sm rounded h-100" style="border-radius: 12px;">
                     <div class="icon mb-3 p-3 bg-light rounded-circle text-primary text-center d-inline-block">
                         <i class="fa-solid fa-location-dot fa-2x"></i>
                     </div>
                     <h4>Our Location</h4>
-                    <p class="text-size-16">Hyderabad, Telangana, India</p>
+                    <p class="text-size-16 mb-2">Hyderabad, Telangana, India</p>
                     <div class="clearfix"></div>
                     <a href="https://maps.google.com/?q=Hyderabad,Telangana" target="_blank" 
                         class="text-decoration-none button">Get Directions<i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-4">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-4">
                 <div class="contact-box p-4 bg-white shadow-sm rounded h-100" style="border-radius: 12px;">
                     <div class="icon mb-3 p-3 bg-light rounded-circle text-primary text-center d-inline-block">
                         <i class="fa-solid fa-phone-volume fa-2x"></i>
@@ -145,7 +158,19 @@
                     <a href="tel:+917337333436" class="text-decoration-none button mt-2">Call us Now<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12 mb-4">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-4">
+                <div class="contact-box p-4 bg-white shadow-sm rounded h-100" style="border-radius: 12px;">
+                    <div class="icon mb-3 p-3 bg-light rounded-circle text-primary text-center d-inline-block">
+                        <i class="fa-solid fa-envelope fa-2x"></i>
+                    </div>
+                    <h4>Email Address</h4>
+                    <a href="mailto:mallikarjun@bridge2wealth.in" class="mb-0 text-decoration-none text-size-15 d-block" style="word-break: break-all;">mallikarjun@bridge2wealth.in</a>
+                    <a href="mailto:info@bridge2wealth.in" class="text-decoration-none text-size-15 d-block mt-1">info@bridge2wealth.in</a>
+                    <div class="clearfix"></div>
+                    <a href="mailto:info@bridge2wealth.in" class="text-decoration-none button mt-2">Send Email<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-4">
                 <div class="contact-box p-4 bg-white shadow-sm rounded h-100" style="border-radius: 12px;">
                     <div class="icon mb-3 p-3 bg-light rounded-circle text-primary text-center d-inline-block">
                         <i class="fa-solid fa-share-nodes fa-2x"></i>
@@ -215,9 +240,12 @@
                                     <textarea class="form_style form-control w-100" placeholder="Tell us how G. V. Mallikarjun Rao can assist you with your insurance or investment needs..." rows="4" name="msg" id="msg"></textarea>
                                 </div>
                             </div>
+                            <div class="col-12 mb-2">
+                                <div id="form_result" style="display:none;"></div>
+                            </div>
                             <div class="col-12 mt-2">
                                 <button type="submit" id="submit" class="submit_now btn w-100 text-white text-decoration-none">
-                                    Submit Request <i class="fa-solid fa-arrow-right ml-2"></i>
+                                    Send via WhatsApp <i class="fa-brands fa-whatsapp ml-2"></i>
                                 </button>
                             </div>
                         </div>            
@@ -264,6 +292,14 @@
                                     <li class="text">
                                         <i class="fa-solid fa-phone"></i>
                                         <a href="tel:+919849798881" class="text-decoration-none">+91 9849798881</a>
+                                    </li>
+                                    <li class="text">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <a href="mailto:mallikarjun@bridge2wealth.in" class="text-decoration-none">mallikarjun@bridge2wealth.in</a>
+                                    </li>
+                                    <li class="text">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <a href="mailto:info@bridge2wealth.in" class="text-decoration-none">info@bridge2wealth.in</a>
                                     </li>
                                     <li class="text">
                                         <i class="fa-solid fa-location-dot"></i>

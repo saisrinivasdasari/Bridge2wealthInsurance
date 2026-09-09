@@ -183,6 +183,66 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Top Bar */
+.top-bar {
+    background-color: #0c3b5e;
+    font-size: 13.5px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    z-index: 10;
+}
+
+.top-bar .container {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.top-bar-left {
+    gap: 8px 20px;
+}
+
+.top-bar-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: color 0.2s ease;
+}
+
+.top-bar-item:hover {
+    color: var(--e-global-color-accent) !important;
+}
+
+.top-bar-item i {
+    font-size: 13px;
+    color: var(--e-global-color-accent);
+}
+
+.top-bar-right {
+    gap: 12px;
+}
+
+.top-bar-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff !important;
+    font-size: 12.5px;
+    transition: all 0.25s ease;
+}
+
+.top-bar-social:hover {
+    background: var(--e-global-color-accent);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
 /* Home Page */
 
 .header {
@@ -1572,27 +1632,30 @@ html {
     height: 54px;
     border-radius: 10px;
     color: #ffffff !important;
-    background: linear-gradient(135deg, #0284c7 0%, #00b4d8 100%);
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
     border: none;
-    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.3);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-con .contact_form .submit_now:hover {
     color: #ffffff !important;
-    background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
-    box-shadow: 0 12px 28px rgba(2, 132, 199, 0.45);
+    background: linear-gradient(135deg, #20bd5a 0%, #0d6e63 100%);
+    box-shadow: 0 12px 28px rgba(37, 211, 102, 0.5);
     transform: translateY(-2px);
 }
 
 .contact-con .contact_form .submit_now i {
-    font-size: 14px;
+    font-size: 18px;
     transition: transform 0.3s ease-in-out;
 }
 
 .contact-con .contact_form .submit_now:hover i {
-    transform: translateX(5px);
+    transform: scale(1.15);
 }
 
 /* Our Partners Section - Exactly from harepatti.com */
