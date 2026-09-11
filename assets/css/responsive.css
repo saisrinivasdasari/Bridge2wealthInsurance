@@ -646,7 +646,8 @@ body.mobile-menu-open {
 }
 
 .header .contact_us{display: none;}
-.banner-con::after {width: 100%; opacity: 20%; background-position: center;}
+.banner-con::before {width: 100%; clip-path: none;}
+.banner-con::after {display: none;}
 .banner-con .banner_content {width: 100%; padding: 60px 65px; text-align: center; position: relative; z-index: 1;}
 .banner-con .banner_content h5 {font-size: 14px; line-height: 22px; padding-left: 0; margin-bottom: 4px;}
 .banner-con .banner_content h5::before {display: none;}
