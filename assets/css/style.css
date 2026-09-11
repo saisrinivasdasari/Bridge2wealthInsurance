@@ -504,6 +504,11 @@ html {
     position: relative;
 }
 
+.banner-con .container {
+    position: relative;
+    z-index: 2;
+}
+
 .banner-con::before {
     content: "";
     width: 60%;
@@ -513,7 +518,7 @@ html {
     position: absolute;
     background: linear-gradient(135deg, #03261e 0%, #064C3B 65%, #0B6B50 100%);
     clip-path: polygon(0 0, 100% 0, 84% 100%, 0% 100%);
-    z-index: 1;
+    z-index: 0;
 }
 
 .banner-con::after {
@@ -534,12 +539,15 @@ html {
     max-width: 700px;
     padding: 40px 0px 40px 12px;
     margin: 0;
+    position: relative;
+    z-index: 3;
 }
 
 .banner-con .banner_wrapper {
-    z-index: 2;
+    z-index: 3;
     padding: 20px 0;
     transform: translateX(-35px);
+    position: relative;
 }
 
 .banner-con .banner_content h5 {
