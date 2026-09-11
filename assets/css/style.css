@@ -499,39 +499,37 @@ html {
 }
 
 .banner-con {
-    background-color: #042E24;
+    background: linear-gradient(135deg, #042E24 0%, #064C3B 50%, #0B6B50 100%);
     overflow: hidden;
 }
 
 .banner-con::before {
     content: "";
-    width: 50%;
+    width: 55%;
     height: 100%;
     left: 0;
     top: 0;
     position: absolute;
-    background: linear-gradient(135deg, #042E24 0%, #064C3B 100%);
-    z-index: 0;
+    background: linear-gradient(90deg, #042E24 0%, #064C3B 70%, rgba(6, 76, 59, 0.92) 100%);
+    z-index: 1;
 }
 
 .banner-con::after {
     content: "";
-    width: 52%;
+    width: 55%;
     height: 100%;
     opacity: 100%;
     right: 0;
     top: 0;
     position: absolute;
     background:
-        radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.45) 0%, rgba(229, 185, 63, 0.25) 25%, rgba(11, 107, 80, 0.2) 60%, transparent 85%),
-        linear-gradient(135deg, rgba(4, 46, 36, 0.38) 0%, rgba(6, 76, 59, 0.22) 40%, rgba(255, 255, 255, 0.1) 100%),
-        url(../images/hero_bright_bg.svg),
-        url(../images/why_choose_trust.jpg);
+        radial-gradient(circle at 80% 25%, rgba(255, 253, 248, 0.4) 0%, rgba(229, 185, 63, 0.3) 25%, rgba(11, 107, 80, 0.4) 65%, transparent 90%),
+        linear-gradient(90deg, rgba(6, 76, 59, 0.98) 0%, rgba(11, 107, 80, 0.75) 30%, rgba(6, 76, 59, 0.6) 100%),
+        url(../images/hero_bright_bg.svg);
     background-size: cover;
-    background-position: center;
+    background-position: center right;
     background-repeat: no-repeat;
     z-index: 0;
-    box-shadow: -20px 0 50px rgba(0, 0, 0, 0.15);
 }
 
 .banner-con .banner_content {
