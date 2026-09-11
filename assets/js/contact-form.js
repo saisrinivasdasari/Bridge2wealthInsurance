@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
             '<div class="alert alert-success d-flex align-items-center mt-3" role="alert">' +
             '<i class="fa-brands fa-whatsapp fa-2x mr-3 text-success"></i>' +
             '<div><strong>Thank you, ' + $("<div>").text(name).html() + '!</strong><br>' +
-            'Redirecting you to WhatsApp to connect directly with G. V. Mallikarjun Rao...</div>' +
+            'Redirecting you to WhatsApp to connect directly with Mallikarjun G V...</div>' +
             '</div>'
         ).fadeIn();
 

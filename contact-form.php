@@ -10,7 +10,7 @@ if(isset($fname) && isset($email))
 	global $to_email,$vpb_message_body,$headers;
 	$to_email="info@bridge2wealth.in";
 	$email_subject="Inquiry From Contact Page - Bridge2wealth";
-	$vpb_message_body = nl2br("Dear Mallikarjun Rao,\n
+	$vpb_message_body = nl2br("Dear Mallikarjun G V,\n
 	The user whose detail is shown below has sent this message from ".$_SERVER['HTTP_HOST']." dated ".date('d-m-Y').".\n
 	
 	FirstName: ".$fname."\n
