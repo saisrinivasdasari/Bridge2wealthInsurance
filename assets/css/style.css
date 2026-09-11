@@ -58,22 +58,26 @@ body {
 }
 
 :root {
-    --e-global-color-primary: #141430;
-    --e-global-color-secondary: #2a2a2a;
-    --e-global-color-accent: #3dceb2;
-    --e-global-color-text: #6a6a6a;
+    --e-global-color-primary: #064C3B;
+    --e-global-color-secondary: #0B6B50;
+    --e-global-color-accent: #D6A62C;
+    --e-global-color-cta: #E5B93F;
+    --e-global-color-text: #1F2926;
     --e-global-color-white: #ffffff;
     --e-global-color-black: #000000;
-    --e-global-color-dark-moderate-blue: #2d5a7a;
-    --e-global-color-very-dark-mostly-black-blue: #10202c;
+    --e-global-color-cards: #FFFDF8;
+    --e-global-color-cream: #F7F4EA;
+    --e-global-color-sage: #DCE9E2;
+    --e-global-color-dark-moderate-blue: #0B6B50;
+    --e-global-color-very-dark-mostly-black-blue: #042E24;
     --e-global-color-grayish-blue: #a7b8c5;
-    --e-global-color-light-grayish-cyan: #f5fefc;
+    --e-global-color-light-grayish-cyan: #F7F4EA;
     --e-global-color-very-light-gray: #e2e2e2;
-    --e-global-color-light-moderate-blue: #4b7797;
-    --e-global-color-light-yellow: #ffbf44;
-    --e-global-color-nav-text: #0f0200;
-    --e-global-color-very-dark-gray-mostly-black: #282828;
-    --e-global-color-star-yellow: #fbc729;
+    --e-global-color-light-moderate-blue: #0B6B50;
+    --e-global-color-light-yellow: #E5B93F;
+    --e-global-color-nav-text: #1F2926;
+    --e-global-color-very-dark-gray-mostly-black: #1F2926;
+    --e-global-color-star-yellow: #D6A62C;
     --e-global-color-pure-red: #ff0000;
 }
 
@@ -185,10 +189,10 @@ html {
 
 /* Top Bar */
 .top-bar {
-    background-color: #0c3b5e;
+    background-color: #064C3B;
     font-size: 13.5px;
     font-family: 'Poppins', sans-serif;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(220, 233, 226, 0.15);
     position: relative;
     z-index: 10;
 }
@@ -495,7 +499,7 @@ html {
 }
 
 .banner-con {
-    background-color: #0b3c5d;
+    background-color: #042E24;
     overflow: hidden;
 }
 
@@ -506,7 +510,7 @@ html {
     left: 0;
     top: 0;
     position: absolute;
-    background: linear-gradient(135deg, #092c44 0%, #0d4b75 100%);
+    background: linear-gradient(135deg, #042E24 0%, #064C3B 100%);
     z-index: 0;
 }
 
@@ -519,8 +523,8 @@ html {
     top: 0;
     position: absolute;
     background:
-        radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.45) 0%, rgba(254, 240, 138, 0.3) 25%, rgba(0, 180, 216, 0.2) 60%, transparent 85%),
-        linear-gradient(135deg, rgba(9, 44, 68, 0.35) 0%, rgba(2, 132, 199, 0.2) 40%, rgba(255, 255, 255, 0.1) 100%),
+        radial-gradient(circle at 75% 25%, rgba(255, 255, 255, 0.45) 0%, rgba(229, 185, 63, 0.25) 25%, rgba(11, 107, 80, 0.2) 60%, transparent 85%),
+        linear-gradient(135deg, rgba(4, 46, 36, 0.38) 0%, rgba(6, 76, 59, 0.22) 40%, rgba(255, 255, 255, 0.1) 100%),
         url(../images/hero_bright_bg.svg),
         url(../images/why_choose_trust.jpg);
     background-size: cover;
@@ -914,7 +918,7 @@ html {
     width: 100%;
     height: 100%;
     top: 0;
-    background: linear-gradient(135deg, #0c3b5e 0%, #072238 100%);
+    background: linear-gradient(135deg, #064C3B 0%, #042E24 100%);
 }
 
 .choose-con .choose-leftimage {
@@ -1130,7 +1134,7 @@ html {
     top: 0;
     width: 35%;
     height: 100%;
-    background: linear-gradient(135deg, #f4f7fa 0%, #e8eff6 100%);
+    background: linear-gradient(135deg, #F7F4EA 0%, #DCE9E2 100%);
 }
 
 .faq-con .faq_wrapper .faq-image {
@@ -1327,11 +1331,11 @@ html {
 }
 
 .testimonial-review-card {
-    background: #ffffff;
+    background: var(--e-global-color-cards);
     border-radius: 16px;
     padding: 24px 22px 20px;
-    box-shadow: 0 6px 20px rgba(18, 38, 63, 0.05);
-    border: 1px solid #eef3f6;
+    box-shadow: 0 6px 20px rgba(6, 76, 59, 0.05);
+    border: 1px solid var(--e-global-color-sage);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1343,8 +1347,8 @@ html {
 
 .testimonial-review-card:hover {
     transform: translateY(-4px);
-    border-color: rgba(61, 206, 178, 0.4);
-    box-shadow: 0 12px 30px rgba(61, 206, 178, 0.12);
+    border-color: rgba(214, 166, 44, 0.5);
+    box-shadow: 0 12px 30px rgba(6, 76, 59, 0.12);
 }
 
 .testimonial-card-header {
@@ -1382,23 +1386,23 @@ html {
 }
 
 .avatar-pink {
-    background: #2d5a7a;
-    /* theme dark-moderate-blue */
+    background: #0B6B50;
+    /* theme secondary Forest Green */
 }
 
 .avatar-blue {
-    background: #141430;
-    /* theme primary navy */
+    background: #064C3B;
+    /* theme primary Deep Emerald */
 }
 
 .avatar-teal {
-    background: #3dceb2;
-    /* theme accent teal */
+    background: #D6A62C;
+    /* theme accent Premium Gold */
 }
 
 .avatar-purple {
-    background: #4b7797;
-    /* theme light-moderate-blue */
+    background: #042E24;
+    /* theme dark emerald */
 }
 
 .testimonial-meta .name {
@@ -1511,7 +1515,7 @@ html {
     background: var(--e-global-color-accent);
     color: #ffffff;
     border-color: var(--e-global-color-accent);
-    box-shadow: 0 6px 16px rgba(61, 206, 178, 0.35);
+    box-shadow: 0 6px 16px rgba(214, 166, 44, 0.4);
 }
 
 .testimonial-nav-prev {
@@ -1580,9 +1584,9 @@ html {
     height: 52px;
     margin-bottom: 0;
     padding: 12px 18px;
-    color: #0f172a !important;
-    background-color: #f8fafc !important;
-    border: 1.5px solid #cbd5e1 !important;
+    color: #1F2926 !important;
+    background-color: var(--e-global-color-cards) !important;
+    border: 1.5px solid #d0ded6 !important;
     box-shadow: none !important;
     border-radius: 10px;
     outline: none;
@@ -1595,7 +1599,7 @@ html {
     appearance: none;
     background-repeat: no-repeat !important;
     background-position: right 18px center !important;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23475569' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23064C3B' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E") !important;
     padding-right: 42px !important;
 }
 
@@ -1609,13 +1613,13 @@ html {
 .contact-con .contact_form select:focus,
 .contact-con .contact_form textarea:focus {
     background-color: #ffffff !important;
-    border-color: #0284c7 !important;
-    box-shadow: 0 0 0 3.5px rgba(2, 132, 199, 0.18) !important;
+    border-color: #0B6B50 !important;
+    box-shadow: 0 0 0 3.5px rgba(11, 107, 80, 0.18) !important;
 }
 
 .contact-con .contact_form input::placeholder,
 .contact-con .contact_form textarea::placeholder {
-    color: #64748b !important;
+    color: #71887e !important;
     opacity: 1;
 }
 
@@ -1982,7 +1986,7 @@ html {
     height: 100%;
     opacity: 100%;
     position: absolute;
-    background: linear-gradient(135deg, #0c3b5e 0%, #19537c 50%, #07253d 100%);
+    background: linear-gradient(135deg, #042E24 0%, #064C3B 50%, #0B6B50 100%);
 }
 
 .sub_banner .sub_banner_con h1 {
@@ -2511,7 +2515,7 @@ html {
     width: 100%;
     height: 100%;
     top: 0;
-    background: linear-gradient(135deg, #0b3c5d 0%, #07253d 100%);
+    background: linear-gradient(135deg, #064C3B 0%, #042E24 100%);
 }
 
 .secure-con .secure-leftimage {
@@ -3814,7 +3818,7 @@ html {
     width: 100%;
     height: 100%;
     top: 0;
-    background: linear-gradient(135deg, #0f4c75 0%, #0b3c5d 100%);
+    background: linear-gradient(135deg, #064C3B 0%, #042E24 100%);
 }
 
 .insurance-con .insurance-leftimage {
@@ -4530,7 +4534,7 @@ html {
 /* Call Button (Bottom Left) */
 .float-btn-call {
     left: 25px;
-    background: linear-gradient(135deg, #0c3b5e 0%, #3dceb2 100%);
+    background: linear-gradient(135deg, #064C3B 0%, #0B6B50 50%, #D6A62C 100%);
     color: #ffffff;
 }
 
@@ -4577,11 +4581,11 @@ html {
 
     0%,
     100% {
-        box-shadow: 0 0 0 0 rgba(61, 206, 178, 0.7);
+        box-shadow: 0 0 0 0 rgba(214, 166, 44, 0.7);
     }
 
     50% {
-        box-shadow: 0 0 0 16px rgba(61, 206, 178, 0);
+        box-shadow: 0 0 0 16px rgba(214, 166, 44, 0);
     }
 }
 
@@ -4604,7 +4608,7 @@ html {
 /* Tooltip on Hover */
 .float-tooltip {
     position: absolute;
-    background: #141430;
+    background: #042E24;
     color: #ffffff;
     padding: 6px 14px;
     border-radius: 20px;
