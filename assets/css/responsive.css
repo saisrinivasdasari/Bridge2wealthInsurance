@@ -821,8 +821,11 @@ body.mobile-menu-open {
 .aboutpage-con .about_content a {padding: 15px 20px;}
 .aboutpage-con .about_wrapper {text-align: center; display: inline-block;}
 .aboutpage-con .about_wrapper .image img{width: 225px;}
-.aboutpage-con .about_wrapper .about-image1 {left: -125px;}
-.aboutpage-con .about_wrapper .about-image2 {top: 0; right: -125px;}
+.aboutpage-con .about_wrapper .about-image1 {left: -105px;}
+.aboutpage-con .about_wrapper .about-image2 {top: 56px; right: -100px;}
+.aboutpage-con .about_wrapper .box {top: 145px; right: 20px; width: 170px; height: 145px; padding: 15px; text-align: left;}
+.aboutpage-con .about_wrapper .box .about-quoteimage {margin-bottom: 8px;}
+.aboutpage-con .about_wrapper .box h6 {line-height: 20px; margin-bottom: 4px;}
 .partner-con {padding: 60px 0;}
 .partner-con .partner_content h6 {margin-bottom: 4px;}
 .partner-con .partner_content h2 {margin-bottom: 30px;}
@@ -1119,8 +1122,11 @@ h5 {font-size: 16px; line-height: 24px;}
 .aboutpage-con .about_content .text {margin-bottom: 15px;}
 .aboutpage-con .about_content a {padding: 13px 20px;}
 .aboutpage-con .about_wrapper .image img{width: 200px;}
-.aboutpage-con .about_wrapper .about-image1 {left: -115px;}
-.aboutpage-con .about_wrapper .about-image2 {right: -115px;}
+.aboutpage-con .about_wrapper .about-image1 {left: -85px;}
+.aboutpage-con .about_wrapper .about-image2 {top: 50px; right: -80px;}
+.aboutpage-con .about_wrapper .box {top: 110px; right: 40px; width: 150px; height: 140px; padding: 12px;}
+.aboutpage-con .about_wrapper .box .about-quoteimage {margin-bottom: 6px;}
+.aboutpage-con .about_wrapper .box h6 {margin-bottom: 2px;}
 .partner-con {padding: 40px 0;}
 .partner-con .partner_content h2 {margin-bottom: 25px;}
 .partner-con ul li {height: 90px; line-height: 90px; border: 1px solid #ebebeb !important; width: 49%; margin: 0 2% 10px 0; border-radius: 10px;}

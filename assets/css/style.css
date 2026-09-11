@@ -2593,7 +2593,46 @@ html {
 .aboutpage-con .about_wrapper .about-image2 {
     position: absolute;
     right: 0;
-    top: 40px;
+    top: 75px;
+}
+
+.aboutpage-con .about_wrapper .box {
+    top: 190px;
+    right: 158px;
+    width: 193px;
+    height: 166px;
+    padding: 20px 25px;
+    position: absolute;
+    border-radius: 20px;
+    background-color: var(--e-global-color-accent);
+}
+
+.aboutpage-con .about_wrapper .box .about-quoteimage {
+    margin-bottom: 10px;
+}
+
+.aboutpage-con .about_wrapper .box h6 {
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.aboutpage-con .about_wrapper .box span {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-left: 28px;
+    position: relative;
+}
+
+.aboutpage-con .about_wrapper .box span::before {
+    content: "";
+    top: 11px;
+    left: 0;
+    width: 18px;
+    height: 1px;
+    position: absolute;
+    background-color: var(--e-global-color-white);
 }
 
 /* Benefit */
