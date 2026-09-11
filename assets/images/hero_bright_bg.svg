@@ -1,32 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
   <defs>
-    <!-- Deep Emerald & Forest Green Base Gradient blending seamlessly from left (#064C3B) to rich emerald-gold ambient (#0B6B50) -->
+    <!-- Deep Emerald to Forest Green Atmosphere Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#064C3B"/>
-      <stop offset="40%" stop-color="#0B6B50"/>
-      <stop offset="80%" stop-color="#0E5E47"/>
-      <stop offset="100%" stop-color="#042E24"/>
+      <stop offset="0%" stop-color="#042E24"/>
+      <stop offset="35%" stop-color="#064C3B"/>
+      <stop offset="70%" stop-color="#0B6B50"/>
+      <stop offset="100%" stop-color="#118263"/>
     </linearGradient>
 
-    <!-- Warm Golden Sunburst / Ambient Lighting Glow -->
-    <radialGradient id="sunGlow" cx="80%" cy="20%" r="60%">
-      <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.35"/>
-      <stop offset="25%" stop-color="#E5B93F" stop-opacity="0.30"/>
-      <stop offset="60%" stop-color="#D6A62C" stop-opacity="0.12"/>
+    <!-- Warm Golden Sunburst / Glow Overlay -->
+    <radialGradient id="sunGlow" cx="80%" cy="20%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="25%" stop-color="#F7F4EA" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#E5B93F" stop-opacity="0.32"/>
+      <stop offset="75%" stop-color="#D6A62C" stop-opacity="0.15"/>
       <stop offset="100%" stop-color="#064C3B" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Warm Gold Rays -->
+    <!-- Golden Ambient Light Ray -->
     <linearGradient id="goldRay" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E5B93F" stop-opacity="0.35"/>
-      <stop offset="50%" stop-color="#D6A62C" stop-opacity="0.15"/>
+      <stop offset="0%" stop-color="#E5B93F" stop-opacity="0.45"/>
+      <stop offset="45%" stop-color="#D6A62C" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#0B6B50" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Glass Shield Gradient -->
     <linearGradient id="glassShield" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="0%" stop-color="#FFFDF8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#DCE9E2" stop-opacity="0.06"/>
     </linearGradient>
 
     <!-- Soft Drop Shadow Filter -->
@@ -36,27 +37,27 @@
     </filter>
     
     <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
     </filter>
   </defs>
 
-  <!-- Base Emerald Gradient Background -->
+  <!-- Base Rich Emerald Gradient Background -->
   <rect width="1200" height="900" fill="url(#bgGrad)"/>
 
-  <!-- Warm Sunlit Radial Burst -->
+  <!-- Warm Sunburst Burst -->
   <rect width="1200" height="900" fill="url(#sunGlow)"/>
 
   <!-- Dynamic Golden Light Rays -->
   <polygon points="1200,0 600,0 1200,800" fill="url(#goldRay)"/>
-  <polygon points="1200,0 300,0 1200,450" fill="#ffffff" opacity="0.06"/>
+  <polygon points="1200,0 350,0 1200,450" fill="#FFFDF8" opacity="0.10"/>
   
-  <!-- Subtle Modern Financial Growth Curves in Gold & Sage -->
+  <!-- Subtle Modern Tech Grid / Financial Growth Curves -->
   <g opacity="0.18" stroke="#DCE9E2" stroke-width="1.5" fill="none">
     <path d="M 0,700 Q 300,550 600,600 T 1200,400" stroke-width="3"/>
     <path d="M 0,780 Q 350,620 700,680 T 1200,480" stroke-width="2"/>
     <path d="M 0,850 Q 400,700 800,750 T 1200,550" stroke-width="1.5"/>
     
-    <!-- Grid Lines in Soft Sage -->
+    <!-- Grid Lines -->
     <line x1="200" y1="0" x2="200" y2="900" stroke-dasharray="8 8"/>
     <line x1="500" y1="0" x2="500" y2="900" stroke-dasharray="8 8"/>
     <line x1="800" y1="0" x2="800" y2="900" stroke-dasharray="8 8"/>
@@ -67,42 +68,42 @@
     <line x1="0" y1="750" x2="1200" y2="750" stroke-dasharray="8 8"/>
   </g>
 
-  <!-- Abstract Floating Glass Protection Shield (Iconic Insurance Motif) with Gold Tick -->
-  <g transform="translate(850, 180)" filter="url(#shadow)" opacity="0.85">
+  <!-- Abstract Floating Glass Protection Shield (Iconic Insurance Motif) -->
+  <g transform="translate(850, 180)" filter="url(#shadow)" opacity="0.9">
     <path d="M 0,40 C 40,0 120,0 160,40 C 160,120 120,200 0,240 C -120,200 -160,120 -160,40 C -120,0 -40,0 0,40 Z" 
-          fill="url(#glassShield)" stroke="#DCE9E2" stroke-width="2"/>
-    <path d="M -40,100 L -10,130 L 50,60" fill="none" stroke="#E5B93F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+          fill="url(#glassShield)" stroke="#DCE9E2" stroke-width="2.5"/>
+    <path d="M -40,100 L -10,130 L 50,60" fill="none" stroke="#D6A62C" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
   </g>
 
-  <!-- Financial Upward Growth Trend Lines & Glowing Gold Nodes -->
+  <!-- Financial Upward Growth Trend Lines & Glowing Nodes -->
   <g filter="url(#shadow)">
-    <!-- Upward Trend Polyline -->
-    <polyline points="150,750 400,620 650,660 900,420 1150,300" fill="none" stroke="#DCE9E2" stroke-width="3" opacity="0.6"/>
-    <polyline points="150,750 400,620 650,660 900,420 1150,300" fill="none" stroke="#E5B93F" stroke-width="2" opacity="0.95"/>
+    <!-- Upward Trend Polyline in Gold & Warm White -->
+    <polyline points="150,750 400,620 650,660 900,420 1150,300" fill="none" stroke="#FFFDF8" stroke-width="4" opacity="0.8"/>
+    <polyline points="150,750 400,620 650,660 900,420 1150,300" fill="none" stroke="#E5B93F" stroke-width="2.5" opacity="0.95"/>
     
     <!-- Glowing Data Points -->
-    <circle cx="400" cy="620" r="8" fill="#ffffff" filter="url(#glow)"/>
-    <circle cx="400" cy="620" r="4" fill="#0B6B50"/>
+    <circle cx="400" cy="620" r="8" fill="#FFFDF8" filter="url(#glow)"/>
+    <circle cx="400" cy="620" r="4" fill="#064C3B"/>
     
-    <circle cx="650" cy="660" r="8" fill="#ffffff" filter="url(#glow)"/>
-    <circle cx="650" cy="660" r="4" fill="#0B6B50"/>
+    <circle cx="650" cy="660" r="8" fill="#FFFDF8" filter="url(#glow)"/>
+    <circle cx="650" cy="660" r="4" fill="#064C3B"/>
     
     <circle cx="900" cy="420" r="10" fill="#E5B93F" filter="url(#glow)"/>
-    <circle cx="900" cy="420" r="5" fill="#ffffff"/>
+    <circle cx="900" cy="420" r="5" fill="#FFFDF8"/>
 
-    <circle cx="1150" cy="300" r="12" fill="#ffffff" filter="url(#glow)"/>
+    <circle cx="1150" cy="300" r="12" fill="#FFFDF8" filter="url(#glow)"/>
     <circle cx="1150" cy="300" r="6" fill="#D6A62C"/>
   </g>
 
-  <!-- Decorative Glowing Warm Bokeh Circles -->
-  <circle cx="1000" cy="150" r="140" fill="#E5B93F" opacity="0.12" filter="url(#glow)"/>
-  <circle cx="1150" cy="500" r="90" fill="#DCE9E2" opacity="0.12" filter="url(#glow)"/>
-  <circle cx="750" cy="300" r="70" fill="#E5B93F" opacity="0.15" filter="url(#glow)"/>
+  <!-- Decorative Glowing Bokeh Circles (Warm Gold & Soft Sage Atmosphere) -->
+  <circle cx="1000" cy="150" r="140" fill="#FFFDF8" opacity="0.14" filter="url(#glow)"/>
+  <circle cx="1150" cy="500" r="90" fill="#DCE9E2" opacity="0.22" filter="url(#glow)"/>
+  <circle cx="750" cy="300" r="70" fill="#F7F4EA" opacity="0.18" filter="url(#glow)"/>
   <circle cx="900" cy="750" r="160" fill="#0B6B50" opacity="0.25" filter="url(#glow)"/>
-  <circle cx="300" cy="200" r="100" fill="#ffffff" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="300" cy="200" r="100" fill="#DCE9E2" opacity="0.10" filter="url(#glow)"/>
 
   <!-- Golden Floating Stars / Sparkles for Premium Trust Feel -->
-  <g fill="#E5B93F" opacity="0.85">
+  <g fill="#D6A62C" opacity="0.95">
     <polygon points="980,120 985,135 1000,140 985,145 980,160 975,145 960,140 975,135"/>
     <polygon points="720,220 723,230 733,233 723,236 720,246 717,236 707,233 717,230"/>
     <polygon points="1100,420 1104,432 1116,436 1104,440 1100,452 1096,440 1084,436 1096,432"/>
