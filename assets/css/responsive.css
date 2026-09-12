@@ -213,7 +213,7 @@ h2 {font-size: 40px; line-height: 46px;}
 .navbar-nav .nav-item a {font-size: 15px !important; line-height: 15px !important;}
 .header .contact_us i {margin-left: 20px;}
 .banner-con .banner_content {width: 480px; padding: 60px 15px 60px 12px; margin: 0;}
-.banner-con .banner_content h5 {font-size: 16px; line-height: 24px; padding-left: 55px; margin-bottom: 12px;}
+.banner-con .banner_content h5 {font-size: 20px; line-height: 28px; padding-left: 55px; margin-bottom: 12px; font-weight: 700;}
 .banner-con .banner_content h5::before {width: 45px;}
 .banner-con .banner_content h1 {margin-bottom: 18px;}
 .banner-con .banner_content .all_button {width: 170px; padding: 17px;}
@@ -649,7 +649,7 @@ body.mobile-menu-open {
 .banner-con::before {width: 100%; clip-path: none;}
 .banner-con::after {display: none;}
 .banner-con .banner_content {width: 100%; padding: 60px 65px; text-align: center; position: relative; z-index: 1;}
-.banner-con .banner_content h5 {font-size: 14px; line-height: 22px; padding-left: 0; margin-bottom: 4px;}
+.banner-con .banner_content h5 {font-size: 17px; line-height: 24px; padding-left: 0; margin-bottom: 8px; font-weight: 700;}
 .banner-con .banner_content h5::before {display: none;}
 .banner-con .banner_content h1 {margin-bottom: 10px;}
 .banner-con .banner_content .all_button {width: 154px; padding: 15px;}

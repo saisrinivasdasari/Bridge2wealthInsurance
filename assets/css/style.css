@@ -553,7 +553,10 @@ html {
 .banner-con .banner_content h5 {
     padding-left: 84px;
     margin-bottom: 18px;
-    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     position: relative;
 }
 
@@ -564,7 +567,7 @@ html {
     bottom: 0;
     margin: auto 0;
     width: 67px;
-    height: 1px;
+    height: 2px;
     position: absolute;
     background-color: var(--e-global-color-accent);
 }
