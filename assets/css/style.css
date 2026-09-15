@@ -250,16 +250,18 @@ html {
 /* Home Page */
 
 .header {
-    padding: 22px 0px;
+    padding: 14px 0px;
     position: relative;
     z-index: 5;
 }
 
 .header .logo img {
-    max-height: 80px;
-    width: 130px;
+    max-height: 105px;
+    width: auto;
+    max-width: 240px;
     object-fit: contain;
     display: block;
+    transition: transform 0.25s ease;
 }
 
 .navbar-collapse ul {
